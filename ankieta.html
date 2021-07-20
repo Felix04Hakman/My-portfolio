@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,firefox=1"/>
+  <meta name="description" content="Ankieta"/>
+  <meta name="keywords" content="HTML,CSS,PHP,Java Script"/>
+
+  <!--[if lt IE 9]>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous"></script>
+         <![endif]-->
+<head>
+        <title>Ankieta</title>
+        <link rel="stylesheet" href="hobby.css" type="text/css"/>
+        <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+        <script src="Zegar.js"></script>
+        <script src="Calendar.js"></script>
+</head>
+<body onload ="showTime(); Calendar();" >
+  <header>
+    <section id="banner">
+    <div id="logo">
+      <a href="Stronka.html" >Jan Mikulski- portfolio<br/></a>
+    </div>
+      <i class="icon-calendar"> </i>
+       <div id="Calendar"> </div> 
+       <i class="icon-clock"></i> 
+      <div id ="zegar"></div>
+      <div style="clear:both;" ></div>
+    </section>
+    </header>
+    <nav id="topnav">   
+      <ul class="menu">
+        <li><a href="Stronka.html" target="_blank">Strona główna</a></li>
+        <li><a href="moje_prace.html"target="_blank" >Moje Prace</a></li>
+        <li><a href="oferta.html"target="_blank" >Moje usługi</a></li>
+        <li><a href="CV.html" target="_blank">CV</a></li>
+        <li><a href="o_mnie.html"target="_blank">O mnie</a></li>
+        <li><a href="kontakt.html" target="_blank">Kontakt</a></li>
+
+      </ul>
+    </nav>
+   <main>
+     <section>
+       <article>
+          <form action="order.php" method="post">
+        <div id="rowDane">
+             
+            <fieldset >
+              <legend>Dane</legend>
+            <div><label><input type="radio" name="sex" value="Kobieta">Kobieta</label></div>
+            <div><label><input type="radio" name="sex" value="Mężczyzna">Meżczyzna</label></div>
+  
+        
+                <label for="region"><h3>Wojewódźctwo</h3></label>
+                <select id="region">
+                <option>Kujawsko-Pomorskie</option>
+                <option>Mazowieckie</option>
+                 <option>Małoposkie</option>
+                <option>Podkarpackie</option>
+                <option>Dolnośląskie</option>
+                <option>Lubelskie</option>
+                <option>Lubawskie</option>
+                <option>Świętokrzyskie</option>
+                <option>Wielkopolskie</option>
+                <option>Podlaskie</option>
+                <option>Warmińsko-Mazurskie</option>
+                <option>Śląskie</option>
+                <option>Zachodniopomorskie</option>
+                <option>Pomorskie</option>
+                <option>Opolskie</option>
+            </select>
+                <label for="region"><h3>Miasto</h3></label>
+                <select id="region">
+                <option>Toruń</option>
+                </select>
+      </fieldset>
+    </div>
+        <div class="row2">
+        <fieldset>
+             <legend>Uwagi</legend>
+              <div id="uwaga1"><label>Jesteś zadowolony z moich usług? Co cię zadowoliło? </br> 
+                <input type="text" name="zadowolenie" ></label></div>
+              <div id="uwaga2"><label>Jaka usługa Cię zadowoliła? Jak  tak, to napisz.</br><input type="text" name="jaka_usluga" >
+              </label></div>
+              <div id="uwaga3"><label>Jeśli jesteś niezdowolony to z czego ? Poziel się swymi wnioskami.</br>
+              <input type="text" name="wniosek"></label></div>
+              <div id="uwaga4"><label>Jakiej usługi brakuje w mojej ofercie? </br><input type="text" name="co_brakuje"></label></div>
+         </fieldset>
+        </div>
+         <fieldset class="kontakt">
+          <legend>Kontakt</legend>
+         <div class="row1"><h3>Zostaw po sobie  kontakt jeśli chcesz pozostać w kontakcie!</h3><br/>
+           <label id="imie"><h3>Imię</h3><input type="text" name="imie" placeholder="Jak masz na imię?"  ></label><br/>
+           <label id="nazwisko"><h3>Numer telefonu</h3><input type="text" name="telefon" placeholder="Podaj tu numer  telefonu"></label><br/>
+           <label id="mail"><h3>Adres e-mail</h3><input type="text" name="mail" placeholder="Podaj tu  adres e-mail"></label> 
+         </div>
+        </fieldset>
+          <div class="row3">
+            <input type="button" value="Zapisz!">
+          </div>
+        </div>
+    </form>
+       </article>
+    </section>
+    </main>
+<footer><h3> Jan Mikulski-portfolio&copy;2020</h3> Początkujący programista zaprasza do współpracy!Mój mail:jan.mikulski.04@gmail.com </div>
+</footer>
+  
+</body>
+</html>

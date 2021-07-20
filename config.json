@@ -1,0 +1,100 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "ff16079eb4be12c49bf3014d2322acdd",
+      "css": "github-circled",
+      "code": 59392,
+      "src": "zocial"
+    },
+    {
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail-alt",
+      "code": 61664,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8b80d36d4ef43889db10bc1f0dc9a862",
+      "css": "user",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1145676a91138011729fa2909997af66",
+      "css": "linkedin-squared",
+      "code": 62220,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0f6a2573a7b6df911ed199bb63717e27",
+      "css": "github-circled-1",
+      "code": 61595,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e331ff486a299c6bdf0056426c8fac53",
+      "css": "youtube-squared",
+      "code": 61798,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0133387f2069a1b3168942b84d81dd3a",
+      "css": "gamepad",
+      "code": 61723,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b6f32db98a3de777f5ae3005191b1831",
+      "css": "code",
+      "code": 59394,
+      "src": "entypo"
+    },
+    {
+      "uid": "47bd87a650e95b97f947d275ed968efe",
+      "css": "facebook-squared",
+      "code": 62222,
+      "src": "entypo"
+    },
+    {
+      "uid": "9ea7cce5e08e5ac2c225fabf2e6dc353",
+      "css": "briefcase",
+      "code": 59395,
+      "src": "entypo"
+    },
+    {
+      "uid": "626fb97a7c0c0db53a1853fb9e96e223",
+      "css": "googleplus-rect",
+      "code": 62217,
+      "src": "brandico"
+    },
+    {
+      "uid": "0fbfb1cd7a847c88ea4c141d0e1bbdb5",
+      "css": "instagram",
+      "code": 62253,
+      "src": "entypo"
+    },
+    {
+      "uid": "500fc1f109021e4b1de4deda2f7ed399",
+      "css": "laptop",
+      "code": 61705,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "598a5f2bcf3521d1615de8e1881ccd17",
+      "css": "clock",
+      "code": 59396,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59397,
+      "src": "fontawesome"
+    }
+  ]
+}
