@@ -1,0 +1,197 @@
+body{
+    background-color :gray;
+   
+}
+#container{
+ color:#ffffff;   
+ width:1290px;
+ height: 800px;
+ margin-left: auto;
+ margin-right: auto;
+}
+#topbar {
+    font-family:Arial;
+    font-size: 30px;
+    text-align: center;
+    background-color:#0c252c;
+    width:1300px;
+    height:120px;
+    float:left;
+}
+
+.logo{
+    Width:700px;
+    height:90px;
+    padding:0px 0px 5px 0px;
+    text-transform:inherit;
+    letter-spacing:3px;
+	font-weight:900;
+    float:left;
+    
+}
+.logo a{
+    text-decoration: none;
+    color:#ffffff;
+}
+#zegar{
+    position: absolute;
+    transform: translateX(320%) translateY(-140%);
+    color: #ffffff;
+    font-size: 32px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    width:300px;
+    height:70px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    float:left;
+}
+.icon-calendar{
+    position: absolute;
+    transform: translateX(-430%) translateY(0%);
+    font-size: 20px;
+    margin-left:10px;
+
+}
+.icon-clock{
+    font-size: 20px;
+    margin:10px;
+}
+
+#Calendar{
+    position: absolute;
+    transform: translateX(242%) translateY(-35%);
+    color: #ffffff;
+    font-size: 32px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    width:280px;
+    height:70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    float:left;
+}    
+#main{
+  background-color: teal;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width:1300px;
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  float:left;
+} 
+#socialmedia{
+    background-color: teal;
+    width:1300px;
+    height: 150px;
+    margin:auto;
+    text-align: center;  
+}
+.fb{
+    background-color:#4668b3;
+    text-align: center;
+    width:140px;
+    height:140px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 120px;
+    margin-right: 20px;
+    float:left;
+    
+}
+.fb:hover{
+    background-color:#7bc2ee;
+}
+
+
+
+.insta{
+    background-color: palevioletred;
+    text-align: center;
+    width:140px;
+    height:140px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float:left;
+}   
+.insta:hover{
+    background-color:#c70a7e99;
+}
+
+
+
+.linkedin{
+    background-color: #0c3594;
+    text-align: center;
+    width:140px;
+    height:140px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float:left;
+}
+.linkedin:hover{
+    background-color:#0c3533;
+}
+
+
+.gplus{
+    background-color:#d95333;
+    text-align: center;
+    width:140px;
+    height:140px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float:left;
+}
+.gplus:hover{
+    background-color:#c92609;
+}
+
+.tweeter{
+    background-color:#3095d3;
+    text-align: center;
+    width:140px;
+    height:140px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float:left;
+}
+.tweeter:hover{
+    background-color: #80d9f1;
+}
+
+.youtube{
+    background-color:#e61111;
+    text-align: center;
+    width:140px;
+    height:140px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 120px;
+    float:left;
+}
+.youtube:hover{
+    background-color:#8f0606 ;
+}
+#footer{
+    background-color:#0c252c;
+    color:#ffffff;
+    width:1280px;
+    widows: 100px;
+    height: 150px;
+    text-align: center;
+    padding:10px;
+    clear:both;
+}
+

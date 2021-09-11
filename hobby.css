@@ -1,0 +1,202 @@
+body{
+    background-color:#2F3336;
+    color:#efefef;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 17px;
+    padding: 0px;
+    flex-flow:  nowrap;
+}
+
+#banner{
+    background-color:#0c252c;
+    padding-right:15%;
+    padding-left:15%;
+}
+#topnav{
+    background-color:#090a47 ;
+    text-align: center;
+}
+#logo{
+   
+     text-transform: inherit;
+     letter-spacing:5px;
+     font-weight:500;
+     margin-bottom: 2%;
+     Width:700px;
+     height:90px;
+     letter-spacing:3px;
+     float:left;
+     
+ }
+ 
+ #logo a{
+    position: absolute;
+    transform: translateX(18%) translateY(40%);
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ text-decoration: none;
+ color:#ffffff;
+ font-size: 40px;
+ text-align: center;
+ text-transform: inherit;
+ letter-spacing:5px;
+ font-weight:500;
+ }
+ #zegar{
+  
+    position: absolute;
+    transform: translateX(360%) translateY(-28%);
+    color: #ffffff;
+    font-size: 32px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 7px;
+    width:300px;
+    height:70px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    float:left;
+}
+.icon-calendar{
+    position: absolute;
+    transform: translateX(-30%) translateY(0%);
+    font-size: 20px;
+    
+
+}
+.icon-clock{
+    position: absolute;
+    transform: translateX(400%) translateY(0%);
+    font-size: 20px;
+    margin:10px;
+}
+
+#Calendar{
+ 
+    position: absolute;
+    transform: translateX(280%) translateY(-35%);
+    color: #ffffff;
+    font-size: 32px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    width:280px;
+    height:70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    float:left;
+} 
+
+.menu{
+    list-style-type: none;
+    margin:5px;
+    padding:5px;
+    min-height: 40%;
+    font-size: 20px;
+    line-height: 200%;
+}
+.menu >li{
+    display:inline-block;
+    padding-left:5px;
+    padding-right: 5px;
+    width:180px;
+    border: 2px dashed #0a2b66 ;
+}
+.menu>li:hover{
+    background-color: #4c4ec5;
+}
+
+.menu a {
+    color:#fff;
+    text-decoration: none;
+}
+.menu a:hover{
+ color:#0a2b42;
+}
+
+
+main{
+  height:900px;
+background-color: #1c3a52;
+}
+footer{
+   padding-top: 25px;
+    clear:both;
+    text-align: center;
+    height: 120px;
+    background-color: #0c252c;
+}
+/*parametry do strony anketa.html*/ 
+.row1{
+
+    text-align: center;
+    padding: 5px;
+    
+}
+.row2{    
+padding:5px;
+margin:10px;
+text-align: center;
+font-weight: 400;
+}
+.row3{
+    text-align: center;
+   
+}
+input[type=text] {
+margin:auto;
+width:50%;
+background-color: #94f05f;
+color: black;
+padding: 3px 3px;
+letter-spacing: 2px;
+}
+input[type=number]{
+margin:auto;
+width:50%;
+background-color: #94f05f;
+color: black;
+padding: 3px 3px;
+letter-spacing: 2px;
+}
+input[type=button]{
+
+width:300px;
+height:50px;
+background-color: #29530f;
+color: white;
+line-height: 200%;
+padding: 10px 20px;
+letter-spacing: 2px;
+margin:10px;
+font-weight: 400;
+}
+h3{
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+}
+
+input[type="radio"]{
+    margin-left: 20px;
+}
+.flex-container{
+    width:60%;
+    height: auto;
+}
+label#imie{
+    padding: 20px;
+    margin:5px;
+}
+label#nazwisko{
+    padding: 20px;
+    margin:5px;
+}
+label.mail{
+    padding: 20px;
+    margin:5px;
+}
+div#uwaga1,div#uwaga2,div#uwaga3,div#uwaga4{
+padding: 10px;
+}
+

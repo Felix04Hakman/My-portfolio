@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,firefox=1"/>
+  <meta  name= "viewport" content="width=divice-width,initial-scale=1.0">
+  <meta name="description" content="Moje CV - portfolio"/>
+  <meta name="keywords" content="HTML,CSS,PHP,Java Script,portfolio,CV"/>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+  <script src="jquery.scrollTo.min.js"> </script>
+  <script>
+    jQuery(function($) {
+        //zresetuj scrolla
+        $.scrollTo(0);
+         
+        $('#link1').click(function(){$.scrollTo($('#o_mnie'),500);});
+        $('#link2').click(function(){$.scrollTo($('#school'),500);});
+        $('#link3').click(function(){$.scrollTo($('#zawodowe'),500);});
+        $('#link4').click(function(){$.scrollTo($('#umiem'),500);});
+        $('#link5').click(function(){$.scrollTo($('#hobby'),500);});
+        $('.srcollup').click(function(){$.scrollTo($('body'),1500);});
+      }
+    );
+    // pokaż podczas przewijania 
+    $(window).scroll(function() 
+    {
+      if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+      else $('.scrollup').fadeOut();
+    }
+    );
+  </script>
+<head>
+        <title>Moje portfolio - CV </title>
+        <link rel="stylesheet" href="CV.css" type="text/css"/>
+        <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+        <script src="Zegar.js"></script>
+        <script src="Calendar.js"></script>
+
+</head>
+<div class="container-wrapper">
+<body onload="showTime(); Calendar();">
+<div id="container">
+    <div id="topbar">
+      <div class="logo"><a href="Stronka.html" class="Stronkalink"><h2>Jan Mikulski- portfolio<br/><br/></h2></a></div>
+      <i class="icon-calendar"> </i>
+       <div id="Calendar"> </div> 
+       <i class="icon-clock"></i> 
+      <div id ="zegar"></div>
+      <div style="clear:both;" ></div>
+    </div>
+  <div id="nav">
+    <ul class="Menu">
+      <li><a href="Stronka.html" target="_blank">Strona główna</a></li>
+      <li><a href="CV.html" target="_blank">CV</a></li>
+      <li><a href="moje_prace.html"target="_blank" >Moje Prace</a></li>
+      <li><a href="oferta.html"target="_blank" >Moje usługi</a></li>
+      <li><a href="hobby.html"target="_blank">Hobby</a></li>
+      <li><a href="kontakt.html" target="_blank">Kontakt</a></li>
+      <li><a href="rodo.html" target="_blank">RODO</a></li>
+      <li><a href="#socialmedia" target="">Socialmedia</a></li>
+    </ul>
+    <ul class="spis">
+      <li><a id="link1" href="#o_mnie">O mnie</a></li>
+      <li><a id="link2" href="#school">Wykształcenie</a></li>
+      <li><a id="link3" href="#zawodowe">Doświadczenie zawodowe</li>
+      <li><a id="link4" href="#umiem" >Umiejętności</a></li>
+      <li><a id="link5" href="#hobby">Zainteresowania</a></li>
+    </ul>
+  </div>
+   <div id="main">
+    <div class="dane" >
+    <img src="2020.jpg" alt="Zdjęcie" style="float:right;border-radius: 30px;border:solid blue 2px;margin:10px";/>
+     
+        <u>Rok urodzenia :</u><p>1990</p>  </br> 
+        <u>Miejsce zamieszkania:</u><p>Toruń</p> </br>
+        <u>Numer telefonu: </u>     <p> 880729001</p> </br>
+        <u>E-mail</u>  <p><a href="jan.mikulski.04@gmail.com" style="text-decoration:none;color:#10b449">jan.mikulski.04@gmail.com</a> </p>
+       
+   
+    </div>  
+      <div id="o_mnie">
+        <h2 style="border: blue solid 2px;background-color: #17b5d155;color:#ffffff";>O mnie: </h2>
+        <p>Jestem skrupulatnym i cierpliwym pracownikiem wykonującym swoje zadania. Nie mam problemu z  komunikacją z innymi ludźmi w pracy. Potrafię odpowiednio zarządzać swoim czasem i współpracować . 
+         Otwarty na zdobywanie  nowych  doświadczeń, umiejętności  dające rozwój. 
+         Mam doświadczenie jako magazynier, pracownik produkcji i innych branży, ale  jednak  nie spoczywam na laurach i uczę się nowych umiejętności.  Umiem posługiwać się językiem Angielskim w stopniu komunikatywnym. Uczę się na technika informatyka i  wiążę z tym tytułem zawodowym nadzieję na nowy rozwój. I szansę na zdobycie pracy w branży IT.
+        </p>
+    </div>
+
+  <div id="school" >
+     <h2 style="border: blue solid 2px;background-color: #17b5d155;color:#ffffff";> Wykształcenie :</h2> </br>
+     <dl>
+     <dt><b>09.2016—11.2020 </b></dt>    </br>   
+      <dd>Centrum Kształcenia Ustawicznego w Toruniu, kierunek: Technik informatyk;</dd> </br>
+    <dt><b>09.2009—06.2011 </b></dt>  </br>    
+    <dd>Szkoła policealna przy WMZDZ w Olsztynie, kierunek: Technik administracji;</dd>  </br>
+   <dt><b> 09.2006—06.2009 </b></dt>    </br>
+      <dd>Liceum Ogólnokształcące  im. Kazimierza Jagiellończyka w  Lidzbarku Warmińskim</br></dd>
+    </dl>
+    <div class="kwali">
+      <h3 style="font-weight: bold;border:solid darkblue 2px ;color:#ffffff;background-color: #17176d;">Kwalifikacje :</h3> </br>
+      <ul>
+    <li>	<b>Kwalifikacja E.12.</b><i> Montaż i eksploatacja komputerów osobistych oraz urządzeń peryferyjnych</i>;</br></li>
+    <li>  <b>Kwalifikacja E.13.</b> <i>Projektowanie lokalnych sieci komputerowych i administrowanie sieciami;</i></br></li>
+  </ul>
+  </div>
+  </div>
+  <div id="zawodowe" ;>
+   <p> <h2 style="border: blue solid 2px;background-color: #1c864555;color:#ffffff"; >Doświadczenie zawodowe :</h2></br>
+    <dl>
+          <dt>16.11.2020 – 07.02.2021 </dt> 
+<dd>Pracownik działu montażu w „Graffico” w Toruniu; </br>
+• Montaż reklam wielkogabarytowych i stojaków do dezynfekcji; </dd>
+         <dt> 02.10.2017 – 06.11.2020</dt>
+<dd>Pracownik produkcji w „PPHU Projan” w Toruniu;</br>
+•	Konwekcja opakowań kartonowych, pomoc operatorom maszyn;</dd> 
+<dt>06.12.2016 – 06.05.2017  </dt>              
+<dd>Magazynier w firmie „EPR. Sp. z.o.o”;</br>
+•	Prace magazynowe i recykling odpadów poprodukcyjnych;</dd>
+<dt>14.05.2015 – 24.09.2015 </dt>              
+<dd>Magazynier w firmie  kurierskiej „DPD”;</br>
+•	Sortowanie paczek, korespondencji i rozładunek transportu;</dd>
+<dt>2012,2015—2019</dt>                          
+<dd>Wolontariat na imprezach „Copernicon”  organizowany przez  Stowarzyszenie  Miłośników Gier i Fantastyki "Thorn" w  Toruniu;</dd>
+<dt>2014 – aktualnie</dt>                                   
+<dd>Wolontariat na imprezie „Pyrkon” organizowany przez Klub „Druga Era”; </dd> 
+<dt>02.2013 – 04.2013 </dt>                      
+<dd>Praktyka w studenckim Radiu „Sfera” UMK;</dd>
+<dt>03.01.2010 – 15.02.2010</dt>               
+<dd>Pracownik biurowy:  praktyki zawodowe  w Urzędzie Górowo Iławeckie. </dd>
+</dl>
+
+  </div>
+<div id="umiem">
+<h2 style="border: blue solid 2px;background-color: #1c864555;color:#ffffff;";>Umiejętności:</h2>
+<ul>
+<li> J. Angielski   - poziom b2 ;</li>
+<li>Znajomość obsługi sieci internetowych i pracy w tym środowisku (LAN,WAN, ipv4, routery, modemy…);</li>
+ <li>Znajomość pracy z HTML, CSS, PHP ,JavaScript –  znajomość  podstawowa (w trakcie nauki); </li>
+ <li>Znajomość oprogramowania: Windows xp,7, 10, Server  oraz unixowych (Ubuntu, Linux);</li>
+</ul>
+</div>
+<div id="hobby">
+ <h2 style="border: blue solid 2px;background-color: #1c864555;color:#ffffff;" >Zainteresowania: </h2> 
+ <p>
+Rysowanie, śpiew, pisanie opowiadań fantasty hobbistycznie, historia – okres średniowieczny i 
+ historia regionu Warmii i Mazur, mitologie, geografia, komiks, książki z gatunku  fantastyki i s-f, DIY.</p>
+</div>
+  
+  </div>
+
+
+  
+</div>
+<div id="socialmedia">
+<div class="fb"><br/><a href="https://www.facebook.com/fen.hak04" target="_blank" class="socialmedialink"><i class="demo-icon icon-facebook-squared"></i></a></div>
+<div class="insta"><br/><a href="https://www.instagram.com/?hl=pl" target="_blank" class="socialmedialink"><i class="demo-icon icon-instagram"></i></a></div>
+<div class="linkedin"><br/><a href="https://www.linkedin.com/in/jan-mikulski-5a82b9145/" target="_blank" class="socialmedialink"><i class="demo-icon icon-linkedin-squared"></i></a></div>
+<div class="gplus"><br/><a href="https://meet.google.com/?hs=197&pli=1&authuser=0" target="_blank" class="socialmedialink"><i class="demo-icon icon-googleplus-rect"></i></a> </div>
+<div class="tweeter"><br/><a href="https://github.com/Felix04Hakman" target="_blank" class="socialmedialink"><br/><i class="demo-icon icon-github-circled"></i></a> </div>
+<div class="youtube"></br><a  href="https://www.youtube.com/" target="_blank" class="socialmedialink"><i class="demo-icon icon-youtube-squared"></i></a></div>
+</div>
+</div>
+   <div id="footer"><h3> Jan Mikulski-portfolio&copy;2020</h3> Początkujący programista zaprasza do współpracy!Mój mail:jan.mikulski.04@gmail.com </div>
+</div>
+  
+</body>
+</div>
+</html>

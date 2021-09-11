@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,firefox=1"/>
+  <meta name="description" content="Moje prace"/>
+  <meta name="keywords" content="HTML,CSS,PHP,Java Script"/>
+  <title>Moje prace</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="style.css" rel="stylesheet" type="text/css"/> 
+  <script src="Zegar.js"></script>
+  <script src="Calendar.js"></script>
+  <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+  <script src="jquery.scrollTo.min.js"> </script>
+  <script>
+    jQuery(function($) {
+        //zresetuj scrolla
+        $.scrollTo(0);
+         
+        $('#link1').click(function(){$.scrollTo($('#htmlcss'),500);});
+        $('#link2').click(function(){$.scrollTo($('#js'),500);});
+        $('#link3').click(function(){$.scrollTo($('#phpsql'),500);});
+        $('#link4').click(function(){$.scrollTo($('#cplus'),500);});
+        $('.srcollup').click(function(){$.scrollTo($('body'),1500);});
+      }
+    );
+    // pokaż podczas przewijania 
+    $(window).scroll(function() 
+    {
+      if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+      else $('.scrollup').fadeOut();
+    }
+    );
+  </script>
+<head>
+  
+<style type="text/css">
+  body{background-color:grey; }
+  #container{
+    display:flow-root;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #222930;
+    width:1300px;
+    padding: 10px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+
+  }
+    
+  #topbar {
+    font-family:Arial;
+    font-size: 30px;
+    text-align: center;
+    background-color:#0c252c;
+    width:1300px;
+    height:120px;
+    float:left;
+}
+
+.logo{
+    Width:700px;
+    height:90px;
+    padding:0px 0px 5px 0px;
+    text-transform:inherit;
+    letter-spacing:3px;
+	font-weight:900;
+    float:left;
+    text-shadow: 2px 2px 0 #33402a,
+                 -2px 2px 0 #33402a,
+                 -2px -2px 0 #33402a,
+                 2px -2px 0 #33402a;
+}
+#zegar{
+    position: absolute;
+    transform: translateX(325%) translateY(-138%);
+    color: #ffffff;
+    font-size: 32px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 7px;
+    width:300px;
+    height:70px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    float:left;
+    text-shadow: 2px 2px 0 #33402a,
+                 -2px 2px 0 #33402a,
+                 -2px -2px 0 #33402a,
+                 2px -2px 0 #33402a;
+}
+.icon-calendar{
+    position: absolute;
+    transform: translateX(-430%) translateY(0%);
+    font-size: 20px;
+    margin-left:10px;
+
+}
+.icon-clock{
+    font-size: 20px;
+    margin:10px;
+}
+
+#Calendar{
+    position: absolute;
+    transform: translateX(245%) translateY(-35%);
+    color: #ffffff;
+    font-size: 32px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    width:280px;
+    height:70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    float:left;
+    text-shadow: 2px 2px 0 #33402a,
+                 -2px 2px 0 #33402a,
+                 -2px -2px 0 #33402a,
+                 2px -2px 0 #33402a;
+} 
+#menu{
+    list-style-type: none;
+    margin:0px;
+    padding:10px;
+    min-height: 40%;
+    font-size: 20px;
+    line-height: 200%;
+    text-align: center;
+    background-color: #0e526d;
+}
+#menu >li{
+    width:160px;
+    display:inline-block;
+    text-align: center;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-top:1%;
+    border: 2px dashed #0a2b66 ;
+}
+#menu >li:hover{
+  background-color: #67b8d8;
+}
+
+#menu a {
+    color:#fff;
+    text-decoration: none;
+}
+#menu a:hover{
+
+ color:#0a2b42;
+}
+  #spis{
+    margin:0px;
+    padding:0px;
+    min-height: 100%;
+    font-size: 20px;
+    line-height: 190%;
+    text-align:center ;
+    
+}
+ 
+  #footer{
+    width: 100%;
+    height: 100px;
+	background-color:#0c252c;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 0px 5px 0px;
+	letter-spacing: 3px;
+	border-top: 2px solid #33402a;
+	text-shadow:
+	2px 2px 0 #33402a,
+	-2px 2px 0 #33402a,
+	-2px -2px 0 #33402a,
+	2px -2px 0 #33402a;
+  }
+ol {
+  margin-top :5px;
+  list-style-type:none;
+  display:inline-block;
+ 
+}
+ol a{
+      color:#ffffff;
+      text-decoration:none;}
+  ol > li:hover > a {
+      color:#166b8d;     
+  }
+ol>li {
+  background-color: #111c5c;
+  border: 2px dashed #0a2b66 ;
+  padding-left:20px;
+  padding-right: 20px;
+  float:left;
+ width:250px;
+ height:100px;
+ font-size: 10px;
+ text-transform:initial;
+font-weight: 200;
+
+}
+ol > li:hover{
+ background-color:#2682a7;
+  }
+ol>li>ul {
+  text-align: center;
+  font-size: 15px;
+  text-transform: none;
+  font-weight: 200;
+  padding: 0px;
+  letter-spacing: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  width:250px;
+  height:50px;
+  list-style-type: none;
+  position:relative;
+   z-index:100;
+   display:block;
+}
+ 
+.slajder{
+  padding: 20px 40px;
+  text-align:justify;
+}
+h1{
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+a:link {
+  color:#750909;
+  text-decoration: none;
+}
+a:hover{
+  color:#485b3b;
+  text-decoration: none;
+}
+a:active{
+  color:#1b9e26;
+  text-decoration: none;
+}
+.scrollup{
+  width:64px;
+  height: 64px;
+  text-decoration: none;
+  background: url("img/scrollup.png") no-repeat 0px 0px;
+  position:fixed;
+  right: 50px;
+  bottom: 50px;
+  display: none;
+}
+button{
+  width:300px;
+  height:50px;
+  font-size: 20px;
+  background-color:#072124;
+  font-weight: 500;
+}
+button:hover{
+  background-color: #3967b8;
+  color:#cccccc;
+}
+
+</style>
+</head>
+<body onload ="showTime(); Calendar();">
+<div id="container">
+    <a href="#" class="scrollup"></a>
+    <div id="topbar">
+      <div class="logo"><a href="Stronka.html" class="Stronkalink"><h2>Jan Mikulski- portfolio<br/><br/></h2></a></div>
+      <i class="icon-calendar"> </i>
+       <div id="Calendar"></div> 
+       <i class="icon-clock"></i> 
+      <div id ="zegar"></div>
+      <div style="clear:both;" ></div>
+    
+    </div>
+     
+      <ul id="menu">
+        <li><a href="Stronka.html" target="_blank">Strona główna</a></li>
+        <li><a href="o_mnie.html"target="_blank" >O mnie</a></li>
+        <li><a href="oferta.html"target="_blank" >Moje usługi</a></li>
+        <li><a href="CV.html" target="_blank">CV</a></li>
+        <li><a href="hobby.html"target="_blank">Hobby</a></li>
+        <li><a href="kontakt.html" target="_blank">Kontakt</a></li>
+
+      </ul>  
+    <div id="spis"> 
+        <ol class="chapters">
+          <li><h1><a id="link1" href="#">Prace z użyciem HTML i CSS</a></h1></li>
+          <li><h1><a id="link2" href="#">Prace z użyciem JavaScript</a></h1></li> 
+          <li><h1><a id="link3" href="#">Prace z użyciem PHP i SQL</a></h1> </li> 
+          <li><h1><a id="link4" href="#">Prace z użyciem C++</a></h1></li>
+        </ol>
+    </div>
+       <!-- ######################## SLAJD 1 ######################## -->
+		
+		<div class="slajder">
+      <div style ="width:1200px;background-color:#034d15bd;margin:auto;">
+      <h1 id="htmlcss">Prace przy  użyciu HTML i CSS </h1>
+      </div>
+      <div style="float:left; width:150px; padding-left:0px;">
+        <img src="img/HTMLCSS.png" alt="HTML&CSS" />
+      </div><br/>  
+			<div style ="width:790px;background-color:#dedede;margin-left:250px ;padding:5px;color:#000000">
+			<br/><br/>HTML i CSS to akronimy od <strong>HyperText Markup Language</strong> i <strong>Cascading Style Sheets</strong>, czyli jezyków tworzących  strukturę strony interetowej (HTML) i stylizujących w sposób kaskadowy wygląd witryny. <br/><br/>
+     </div><br/>
+			<div style="float:left; width:480px; padding-left:20px;">
+				<b>Język HTML składa się z kilku kluczowych komponentów:</b>	<br/>
+				[1] znaczników (i ich atrybutów),<br /><br />
+				[2]typów danych,<br /><br />
+				[3] referencji znakowych,<br /><br />
+				[4] odwołań w postaci encji,<br /><br />
+				[5] deklaracji typu dokumentu.<br /><br />
+			</div>
+			<div style="float:left; width:280px; text-align:left;">
+				<strong>Arkusz stylów</strong> składa się z reguł określających styl dla wybranych elementów dokumentu (HTML, SVG i innych). Reguła składa się z selektora oraz deklaracji. Selektor określa grupę elementów (rzadziej pojedynczy element), którego ma dotyczyć deklaracja.<br/> Deklaracja określa formatowanie i składa się z nazwy jednej z właściwości i jej wartości napisanej po dwukropku. Deklaracja musi być otoczona nawiasami klamrowymi. 
+			</div>
+			<div style="float: left; width:380px; padding:10px;align-content: center;">
+				<h2>Moje prace :</h2>
+				<center><button><a href="Computer-shop/Zadanie.html">Sklep</a></button></center></br></br>
+				<center><button><a href="My-favorite-books-/Index.html">Księgarnia</a></button></center>
+			</div>
+			<div style="clear:both;"></div>
+
+		</div>
+	
+		<!-- ######################## SLAJD 2 ######################## -->
+		
+   <div class="slajder">
+    <div style ="width:1200px;background-color:#034d15bd;margin:auto;">
+      <h1 id="js">Prace przu użyciu JavaScript</h1>
+    </div>
+			<div style="float:left; width:150px; padding-left:0px;">
+				<img src="img/js.png" alt="JavaScript" />
+      </div>
+      <div style ="width:900px;background-color:#dedede;margin: auto;padding: 5px; color:#000000;">
+      <b>JavaScript</b> to skryptowy język programowania, najczęściej stosowany na stronach internetowych.Najczęściej spotykanym zastosowaniem języka JavaScript są strony internetowe. Skrypty te służą najczęściej do zapewnienia interakcji poprzez reagowanie na zdarzenia, walidacji danych wprowadzanych w formularzach lub tworzenia złożonych efektów wizualnych. Skrypty JavaScriptu uruchamiane przez strony internetowe mają znacznie ograniczony dostęp do komputera użytkownika. Po stronie serwera JavaScript może działać w postaci node.js lub Ringo.
+      </div>
+			<br />
+			<div style="float:left; width:280px; padding-left:0px;">
+			<center><h2>Moje Prace :</h2></center>
+			<CENTER><button><a href="Zegar.js">Zegar</a></button></CENTER><br/>
+      <CENTER><button><a href="Calendar.js">Kalendarz</a></button></CENTER><br/>
+			</div>
+      <div style="float:left; width:380px; padding-left:300px;">
+        <br/><br/><br/>
+			<center><button><a href="slajder.html" >Slajder</a></button></CENTER><br/>
+			<center><button><a href="Swich.html">Switch</a></button></center>
+			</div>
+			<div style="clear:both;"></div>
+
+		</div>
+		
+		<!-- ######################## SLAJD 3 ######################## -->
+		
+   <div class="slajder">
+		<div style ="width:1200px;background-color:#034d15bd;margin:auto;">
+      <h1 id="phpsql">Prace przy użyciu PHP i SQL </h1>
+    </div>
+      <div style="float:left; width:150px; padding-left:0px;">
+        <img src="img/php.jpg" alt="PHP" />
+        <img src ="img/sql.png" alt="sql"/>
+      </div><br/>
+			<div style ="width:720px;background-color:#dedede;margin: auto;padding: 5px;color:#000000;">
+			<strong>PHP </strong>– interpretowany, skryptowy język programowania zaprojektowany do generowania stron internetowych i budowania aplikacji webowych w czasie rzeczywistym.<br/><br/><br/><br/><br/><br/></br>
+      <strong>SQL</strong> - SQL (ang. Structured Query Language) – strukturalny język zapytań używany do tworzenia, modyfikowania baz danych oraz do umieszczania i pobierania danych z baz danych.
+                                  Język SQL jest językiem deklaratywnym. Decyzję o sposobie przechowywania i pobrania danych pozostawia się systemowi zarządzania bazą danych (DBMS). 
+     </div><br /><br />
+			
+			<div style="float:left; width:470px; text-align: center; padding-top:20px;">
+				<img src="img/.png" alt="" />
+			</div>
+			<br/>
+			<div style="float:left; width:330px; text-align:left;">
+				<h2>Moje prace: (wkrótce!)</h2>
+				<img src="img/.png" alt="" />
+			</div>
+			<div style="clear:both;"></div>
+
+		</div>
+		
+		
+		<!-- ######################## SLAJD 4 ######################## -->
+		
+		<div class="slajder">
+      <div style ="width:1200px;background-color:#034d15bd;margin:auto;">
+      <h1 id="cplus">Prace przy użyciu C++</h1>
+      </div>
+      <div style="float:left; width:150px; padding-left:0px;">
+        <img src="img/ceplus.png" alt="c++" />
+      </div>  
+      <div style ="width:720px;background-color:#dedede;margin: auto;padding: 5px;color:#000000;">
+      <strong>C++</strong> – język programowania ogólnego przeznaczenia.Umożliwia abstrakcję danych oraz stosowanie kilku paradygmatów programowania: proceduralnego, obiektowego i generycznego. 
+      Charakteryzuje się wysoką wydajnością kodu wynikowego, bezpośrednim dostępem do zasobów sprzętowych i funkcji systemowych, łatwością tworzenia i korzystania z bibliotek (napisanych w C++, C lub innych językach),
+       niezależnością od konkretnej platformy sprzętowej lub systemowej (co gwarantuje wysoką przenośność kodów źródłowych) oraz niewielkim środowiskiem uruchomieniowym. Podstawowym obszarem jego zastosowań są aplikacje i systemy operacyjne. 
+      </div> 
+      <div style="float:left; width:330px; text-align:left;margin-left: 280px;">
+			  	<center><h2>Moje prace: (wkrótce!)</h2></center>
+			<div style="clear:both;"></div>
+		
+		</div>
+
+    
+   <div id="footer"><h3><center> Jan Mikulski-portfolio&copy;2020</h3></center><center> Początkujący programista zaprasza do współpracy!Mój mail:jan.mikulski.04@gmail.com</center> </div>
+  </div>
+  
+</body>
+</html>

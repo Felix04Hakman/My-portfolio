@@ -1,0 +1,78 @@
+
+<!DOCTYPE HTML>
+<html lang="pl">
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,firefox=1"/>
+  <meta name="description" content="Moja strona www"/>
+  <meta name="keywords" content="HTML,CSS,PHP,Java Script"/>
+  <meta name="author"  name="Jan Felix Mikulski"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="follow, index">
+  <meta property="og:url" content="adres domeny">
+  <meta property="og:title" content="Jan Felix Mikulski. Web Developer - Freelancer">
+  <meta property="og:description" content="Projektowanie stron internetowych. Strona internetowa za darmo. HTML, CSS, CMS, SEO,JavaScript">
+  <meta property="og:type" content="landingpage">
+
+<head>
+        <title>Moje portfolio</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+        <script src="Zegar.js"></script>
+        <script src="Calendar.js"></script>
+        
+</head>
+<body onload ="showTime(); Calendar();">
+<div id="container" >
+    <div id="topbar">
+      <div class="logo"><a href="Stronka.html" class="Stronkalink"><h2>Jan Mikulski- portfolio<br/><br/></h2></a></div>
+      <i class="icon-calendar"> </i>
+       <div id="Calendar"> </div> 
+       <i class="icon-clock"></i> 
+      <div id ="zegar"></div>
+      <div style="clear:both;" ></div>
+    </div>
+   <div id="main" >
+     <a href="moje_prace.html"class="squarelink"><div class="square1" ><br/><i class="demo-icon icon-laptop"></i><h1><b>Moje prace</b></h1></div></a>
+     <a href="oferta.html"class="squarelink"><div class="square2" ><br/><i class="demo-icon icon-briefcase"></i><h1><b>Co oferuję</b></h1></div></a>
+     <a href="CV.html"class="squarelink"><div class="square3" ><br/><br/><br/><br/<br/><br/><br/><br/><br/><br/><br/><br/><br/><h1><b>CV</b></h1></div></a>
+     <a href="kontakt.html"class="squarelink"><div class="square4" ><i class="demo-icon icon-mail-alt"></i><h1><b>Kontakt</b></h1></div></a>
+     <a href="O_mnie.html"class="squarelink"><div class="square5" ><i class="demo-icon icon-user"></i><h1><b>O mnie</b></h1></div></a>
+     <a href="hobby.html"class="squarelink"><div class="square6"><i class="demo-icon icon-gamepad"></i><h1><b>Moje hobby</b></h1></div></a>
+   </div>
+   <div id="sidebar">
+     <div class="box">
+            
+           <h2>Lista gości</h2>
+           <section id="formularz">
+           <form action= "order.php" method="post">
+            
+             <input type="text" placeholder="Imie" onfocus="this.placeholder=''" onblur="this.placeholder='Imie'" name="Imie"> 
+             <input type="text" placeholder="Nazwisko" onfocus="this.placeholder=''" onblur="this.placeholder='Nazwisko'" name="Nazwisko"/> 
+             <input type="text" placeholder="Miasto" onfocus="this.placeholder=''" onblur="this.placeholder='Miasto'" name="Miasto"/>
+             <input type="submit" value="submit" name="submit"> 
+            
+           </form>
+          </section>
+      
+      
+     </div>
+     <div class="socialmedia">
+     <div class="fb"><br/><a href="https://www.facebook.com/fen.hak04" target="_blank" class="socialmedialink"><i class="demo-icon icon-facebook-squared"></i></a></div>
+     <div class="insta"><br/><a href="https://www.instagram.com/?hl=pl" target="_blank" class="socialmedialink"><i class="demo-icon icon-instagram"></i></a></div>
+     <div class="linkedin"><br/><a href="https://www.linkedin.com/in/jan-mikulski-5a82b9145/" target="_blank" class="socialmedialink"><i class="demo-icon icon-linkedin-squared"></i></a></div>
+     <div class="gplus"><br/><a href="https://meet.google.com/?hs=197&pli=1&authuser=0" target="_blank" class="socialmedialink"><i class="demo-icon icon-googleplus-rect"></i></a> </div>
+     <div class="tweeter"><br/><a href="https://github.com/Felix04Hakman" target="_blank" class="socialmedialink"><br/><i class="demo-icon icon-github-circled-1"></i></a> </div>
+     <div class="youtube"></br><a  href="https://www.youtube.com/" target="_blank" class="socialmedialink"><i class="demo-icon icon-youtube-squared"></i></a></div>
+     </div>
+   </div>
+  
+   <div class="ankieta">
+      <form action="ankieta.html" id="ankieta">         
+    <input type="submit" value="Wypełnij ankietę" />
+      </form>
+    </div>
+   <div id="footer"><br/><center><h3> Jan Mikulski - portfolio&copy;2020</h3> Początkujący programista zaprasza do współpracy!Mój mail:<b>jan.mikulski.04@gmail.com</b></center> </div>
+</div>
+  
+</body>
+</html>
